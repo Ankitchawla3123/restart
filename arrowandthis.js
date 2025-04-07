@@ -22,4 +22,8 @@ const thischeck2 = () =>{
     let username= "SPY_D"
     console.log(this)
 }
-thischeck2(); // still it reffers to global object
+thischeck2(); // still it reffers to global object 
+
+const add2= (num1 , num2) => num1+num2  // if using {} then have to use return 
+const add3 = (num1,num2,num3) => (num1 +num2 +num3)
+const username = (a, b) => ({username: `${a} and ${b}`})
