@@ -36,3 +36,4 @@
 // div.setAttribute('title','generated title') 
 // div.style.backgroundColor="green"
 // document.body.appendChild(div) 
+
