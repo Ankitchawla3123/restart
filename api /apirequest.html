@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>yo</h1>
+</body>
+<script>
+    const xhr=new XMLHttpRequest();
+    xhr.open('GET','https://api.github.com/users/ankitchawla3123')
+    console.log('here')
+    xhr.onreadystatechange= function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState==4) {
+            console.log(this.responseText)
+            const data=JSON.parse(this.responseText)
+            console.log(data.followers);
+
+            
+        }
+        
+    }
+    console.log(xhr.readyState);
+    
+    
+    xhr.send() // it is called here
+    
+
+</script>
+</html>
