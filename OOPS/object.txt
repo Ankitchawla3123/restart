@@ -1,0 +1,11 @@
+constructor function 
+classes
+prototypes
+classes
+instances( new, this)
+
+
+abstraction
+encapsulation
+inhertence
+polymorphism
